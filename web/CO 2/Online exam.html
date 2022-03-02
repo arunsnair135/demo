@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Online exam
+        </title>
+        <script>
+            function validate(){
+                var score=0;
+                if(document.getElementById("c1").checked){
+                    score=score+1;
+                }
+                if(document.getElementById("c2").checked){
+                    score=score+1;
+                }
+                if(document.getElementById("c3").checked){
+                    score=score+1;
+                }
+                if(document.getElementById("c4").checked){
+                    score=score+1;
+                }
+                if(document.getElementById("c5").checked){
+                    score=score+1;
+                }
+
+                document.getElementById("ans").innerHTML=score;
+            
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        <div>
+         <p>1.Full form of HTML </p>
+         <p><input type="radio" name="fullform" value="HYPERTEXT MARKUP LANGUAGE" id="c1">HYPERTEXT MARKUP LANGUAGE</p>
+         <p><input type="radio" name="fullform" value="HYPERTEXT MAkeUP LANGUAGE">HYPERTEXT MAkeUP LANGUAGE</p>
+         <p><input type="radio" name="fullform" value="HTEXT MARKUP LANGUAGE">HTEXT MARKUP LANGUAGE</p>
+         <p><input type="radio" name="fullform" value="HYPERTEXT MARK LANGUAGE">HYPERTEXT MARK LANGUAGE</p>
+        </div>
+        <div>
+         <p>2.Choose odd one</p>
+         <p><input type="radio" name="odd1" value="php">php</p>
+         <p><input type="radio" name="odd1" value="C" id="c2">C</p>
+         <p><input type="radio" name="odd1" value="javascript">javascript</p>
+         <p><input type="radio" name="odd1" value="html">html</p>
+        </div>
+        <div>
+         <p>3.Choose odd one</p>
+         <p><input type="radio" name="odd2" value="tr">tr</p>
+         <p><input type="radio" name="odd2" value="td">td</p>
+         <p><input type="radio" name="odd2" value="th">th</p>
+         <p><input type="radio" name="odd2" value="h1" id="c3">h1</p>
+        </div>
+        <div>
+            <p>4.100-105</p>
+            <p><input type="radio" name="mat1" value="tr">10</p>
+            <p><input type="radio" name="mat1" value="td">5</p>
+            <p><input type="radio" name="mat1" value="th" id="c4">-5</p>
+            <p><input type="radio" name="mat1" value="h1" >205</p>
+           </div>
+
+           <div>
+            <p>5.100/10</p>
+            <p><input type="radio" name="mat2" value="tr" id="c5">10</p>
+            <p><input type="radio" name="mat2" value="td">5</p>
+            <p><input type="radio" name="mat2" value="th">-5</p>
+            <p><input type="radio" name="mat2" value="h1" >90</p>
+           </div>
+        </form>
+        <button onclick="validate()">SUBMIT</button>
+
+        <p id="ans"> YOUR SCORE:  </p>
+    </body>
+    </html>

@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>
+            string
+        </title>
+        <script>
+           function len(){
+                let a1=document.getElementById('s1').value;
+                let a2=a1.length;
+                document.getElementById("ans").value=a2;
+            }
+
+            function index(){
+                let b1=document.getElementById('s1').value;
+                let b11=document.getElementById('v_in').value;
+                let b2=b1.indexOf(b11);
+                document.getElementById("in").value=b2;
+            }
+
+            function replacestring(){
+                let c1=document.getElementById('s1').value;
+                let c2=c1.replace("javascript","HTML");
+                document.getElementById("rep").value=c2;
+            }
+            function upcase(){
+                let d1=document.getElementById('s1').value;
+                let d2=d1.toUpperCase();
+                document.getElementById("up").value=d2;
+            }
+            function lcase(){
+                let e1=document.getElementById('s1').value;
+                let e2=e1.toLowerCase();
+                document.getElementById("lc").value=e2;
+            }
+            function rev(){
+                let f1=document.getElementById('s1').value;
+                let f2=f1.split('').reverse().join('');
+                document.getElementById("revv").value=f2;
+            }
+            function concatenate(){
+                let g1=document.getElementById('s1').value;
+                let gg1=document.getElementById('c2').value;
+                let g2=g1.concat(gg1);
+                document.getElementById("con").value=g2;
+            }
+            function slice1(){
+                let h1=document.getElementById('s1').value;
+                let h2=h1.slice(3);
+                document.getElementById("sl1").value=h2;
+            }
+            function slice2(){
+                let i1=document.getElementById('s1').value;
+                let start=document.getElementById('s2').value;
+                let end=document.getElementById('s3').value;
+                let i2=i1.slice(start,end);
+                document.getElementById("sl2").value=i2;
+            }
+            function sub(){
+                let j1=document.getElementById('s1').value;
+                let start=document.getElementById('ss2').value;
+                let end=document.getElementById('ss3').value;
+                let j2=j1.substring(start,end);
+                document.getElementById("subr").value=j2;
+            }
+        </script>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td>Enter the string:</td>
+                <td><input type="text" id="s1"></td>
+            </tr>
+            <tr>
+                <td><button onclick="len();">Length</button></td>
+                <td><input type="text" id="ans"></td>
+            </tr>
+            <tr>
+                <td><button onclick="index();">Index</button></td>
+                
+                <td><input type="text" id="v_in" placeholder="character"></td>
+                <td><input type="text" id="in"></td>
+            </tr>
+            <tr>
+                <td><button onclick="replacestring();">replace</button></td>
+                <td><input type="text" id="rep"></td>
+            </tr>
+            <tr>
+                <td><button onclick="upcase();">Uppercase</button></td>
+                <td><input type="text" id="up"></td>
+            </tr>
+            <tr>
+                <td><button onclick="lcase()">Lowercase</button></td>
+                <td><input type="text" id="lc"></td>
+            </tr>
+            <tr>
+                <td><button onclick="rev()">Reverse</button></td>
+                <td><input type="text" id="revv"></td>
+            </tr>
+            <tr>
+                <td><button onclick="concatenate()">Concatenate</button></td>]
+                <td><input type="text" id="c2" placeholder="Enter second string"></td>
+                <td><input type="text" id="con"></td>
+            </tr>
+            <tr>
+                <td><button onclick="slice1()">Normal Slice</button></td>
+                <td><input type="text" id="sl1"></td>
+            </tr>
+            <tr>
+                <td><button onclick="slice2()">Slice</button></td>
+                <td><input type="text" id="s2" placeholder="Start"></td>
+                <td><input type="text" id="s3" placeholder="End"></td>
+                <td><input type="text" id="sl2"></td>
+            </tr>
+            <tr>
+                <td><button onclick="sub()">Sub string</button></td>
+                <td><input type="text" id="ss2" placeholder="Start"></td>
+                <td><input type="text" id="ss3" placeholder="End"></td>
+                <td><input type="text" id="subr"></td>
+            </tr>
+        </table>
+    </body>
+</html>

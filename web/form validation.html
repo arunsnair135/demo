@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>form validation</title>
+        <script>
+            function check(){
+                let mob=document.getElementById('mno').value;
+                let u=document.getElementById('uname').value;
+                let p=document.getElementById('pass').value;
+                if(p==""){
+                    alert("Fill Password")
+                }
+                
+                else{
+                    var passw=  /^[A-Za-z]\w{7,14}$/;
+                    let k=p.match(passw)
+                    if(!k){
+                          alert("Enter an alpha numeric password")
+                        }
+                }
+                
+
+                if(mob==""){
+                    alert("Fill the Mobile number field")
+                }
+                else if(mob.length<10){
+                    alert("Enter a ten digit Mobile Number")
+                }
+                else {
+                    if(mob.isNaN()){
+                     alert("Enter a valid Mobile Number")
+                    }
+                }
+
+                if(u==""){
+                    alert("Fill the username field")
+                }
+                else{ 
+                    if(u.length<5){
+                        alert("Enter a 5 character username")
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body bgcolor="#00997a">
+        <br><br><br><br>
+        <table align="center">
+            <tr>
+                <td>NAME:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>PHONE NUMBER:</td>
+                <td><input type="text" id="mno"></td>
+            </tr>
+            <tr>
+                <td>USERNAME:</td>
+                <td><input type="text" id="uname"></td>
+            </tr>
+            <tr>
+                <td>PASSWORD:</td>
+                <td><input type="password" id="pass"></td>
+            </tr>
+            <tr>
+                <td><button onclick="check()">OK</button></td>
+            </tr>
+        </table>
+

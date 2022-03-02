@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>
+            math
+        </title>
+        <script>
+            function maths(){
+                let a1=document.getElementById('n').value;
+                let a2=Math.pow(a1,2);
+                document.getElementById("sqans").value=a2;
+                let a3=Math.ceil(a1);
+                document.getElementById("cans").value=a3;
+                let a4=Math.floor(a1);
+                document.getElementById("fans").value=a4;
+                let a5=Math.round(a1);
+                document.getElementById("rans").value=a5;
+                let a6=Math.trunc(a1);
+                document.getElementById("tans").value=a6;
+                let a7=Math.sign(a1);
+                document.getElementById("signans").value=a7;
+                let a8=Math.random(a1);
+                document.getElementById("ranans").value=a8;
+                let a9=Math.sign(a1);
+                if(a9==1){
+                    var e="Positive";
+                }
+                else if(a9==0){
+                    var e="Zero";
+                }
+                else{
+                    var e="Negative";
+                }
+                
+                document.getElementById("sans").value=e;
+
+            }
+
+            function largg(){
+                let v1=document.getElementById('l1').value;
+                let v2=document.getElementById('l2').value;
+                let v3=document.getElementById('l3').value;
+                let q=0;
+                if(v1>v2 && v1>v3){
+                     q=v1;
+                }
+                else if(v2>v1 && v2>v3){
+                     q=v2;
+                }
+                else if(v3>v1 && v3>v2){
+                     q=v3;
+                }
+                document.getElementById("lans").value=q;
+            }
+        </script>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td>Enter the Number:</td>
+                <td><input type="text" id="n"></td>
+                <td><button onclick="maths()">MATH</button></td>
+            </tr>
+            <tr>
+                <td>Square:</td>
+                <td><input type="text" id="sqans"></td>
+            </tr>
+            <tr>
+                <td>Ceil:</td>
+                <td><input type="text" id="cans"></td>
+            </tr>
+            <tr>
+                <td>Floor:</td>
+                <td><input type="text" id="fans"></td>
+            </tr>
+            <tr>
+                <td>Round:</td>
+                <td><input type="text" id="rans"></td>
+            </tr>
+            <tr>
+                <td>Trunc:</td>
+                <td><input type="text" id="tans"></td>
+            </tr>
+            <tr>
+                <td>Sign:</td>
+                <td><input type="text" id="signans"></td>
+            </tr>
+            <tr>
+                <td>Random:</td>
+                <td><input type="text" id="ranans"></td>
+            </tr>
+            <tr>
+                <td>Sign:</td>
+                <td><input type="text" id="sans"></td>
+            </tr>
+            <tr>
+            <td>Largest:</td>
+            <td><input type="text" id="l1" placeholder="Number 1"></td>
+            <td><input type="text" id="l2" placeholder="Number 2"></td>
+            <td><input type="text" id="l3" placeholder="Number 3"></td>
+        </tr>
+        <tr>
+        <td><input type="text" id="lans"></td></tr><td>
+            <button onclick="largg();">LARGE</button></td>
+        </table>
+
+       
+        
+    </body>
+</html>

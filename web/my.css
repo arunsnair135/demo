@@ -1,0 +1,13 @@
+input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+    font-size: 16px;
+    border-radius: 8px;
+    
+    color:whitesmoke;
+    background-color: #4CAF50;
+}
+input[type="text"]:focus{
+    color: yellow;
+}

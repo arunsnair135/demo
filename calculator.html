@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <script>
+                 function add(){
+                     var q1=Number(document.getElementById('n1').value);
+                     var w1=Number(document.getElementById('n2').value);
+                     var res1=q1+w1;
+                    
+                     document.getElementById('ans').value=res1;
+                 }
+                 function sub(){
+                     var q2=Number(document.getElementById("n1").value);
+                     var w2=Number(document.getElementById("n2").value);
+                     var res2=q2-w2;
+                     
+                     document.getElementById("ans").value=res2;
+                 }
+                 function mul(){
+                     var q3=Number(document.getElementById("n1").value);
+                     var w3=Number(document.getElementById("n2").value);
+                     var res3=q3*w3;
+                     
+                     document.getElementById("ans").value=res3;
+                 }
+                 function div(){
+                     var q4=Number(document.getElementById("n1").value);
+                     var w4=Number(document.getElementById("n2").value);
+                     var res4=q4/w4;
+                     document.getElementById("ans").value=res4;
+                 }
+
+        </script>
+    
+
+    <body>
+        <h2 style="color:blue; text-align:center">CALCULATOR</h2>
+
+        
+            <br> &nbsp;<label>Enter First Number:</label> <input type="text" id="n1"><br><br>
+            <br> &nbsp;<label>Enter Second Number: </label><input type="text" id="n2"><br><br>
+           
+            <br> &nbsp;<button onclick="add()">ADD</button>
+             &nbsp;<button onclick="sub()">SUBSTRACT</button>
+             &nbsp;<button onclick="mul()">MULTIPLY</button>
+             &nbsp;<button onclick="div()">DIVIDE</button>
+             <br><br> <textarea rows="4" cols="10" id="ans"></textarea><br><br>
+                
+       
+    </body>
+</html>

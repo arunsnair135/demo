@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            event 2
+        </title>
+        <script type="text/javascript">
+          
+          function changeimagenew(image)
+          {
+            image.src = "d2.jpg"
+          }
+          function changetoback(image)
+          {
+            image.src = "d1.jpg"
+          }
+
+           
+          function changetextnew()
+          {
+            document.getElementById('heading1').innerHTML = 'haha changed';
+          }
+          function changeback()
+          {
+            document.getElementById('heading1').innerHTML= 'Hover mouse ';
+          }
+
+        /*
+            document.getElementById("content").addEventListener("mouseover",change1());
+            document.getElementById("content").addEventListener("mouseout",change2());
+
+            function change1(){
+                document.getElementById("image").src="d2.jpg";
+            }
+
+            function change2(){
+                  document.getElementById("image").src="d1.jpg";
+            }
+
+        */
+
+
+            
+        </script>
+
+    </head>
+    <body>
+       
+          
+            <img src="d1.jpg" id="image" onmouseover="changeimagenew(this)" onmouseout="changetoback(this)" height="450" width="800">
+             <br>
+            
+                <h1 id="heading1" onMouseOver="changetextnew()" onmouseout="changeback()"> Hover mouse </h1>
+                
+            
+           
+        
+
+       
+       
+    </body>
+</html>
+
